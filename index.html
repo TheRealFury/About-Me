@@ -1,60 +1,90 @@
-<html>
-<head>
-  <title>Games</title>
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- HTML Specifics -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title of the Webpage -->
+    <title>Ayush Bhatt</title>
+
+    <!-- Reference to Bootstrap CSS Files -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./headers.css" rel="stylesheet">
+    <link href="./heroes.css" rel="stylesheet">
+
     <style>
-        img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-    </style>
-    <style>
-      .sideDiv {
-        border: 1px outset black;
-        background-color: white;
-        text-align: center;
-        width: 120;
-        height: 400;
+      .breaker{
+        width: 100%;
+        height: 50px;
       }
     </style>
-    <style>
-      .mainDiv {
-        border: 1px outset black;
-        background-color: white;
-        text-align: left;
-        width: 1220;
-        height: 400;
-      }
-    </style>
-    <a href="https://ayushbhatt.in"><img src="AyushLogo.png" alt="logo" height="9%" width="9%" style="float:left"></a>
-    <br> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/About-Me"><button>About Me</button></a> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/My-Achievements"><button>My Achievements</button></a> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/Contact-Me"><button>Contact Me</button></a> <br><br>
-    <hr>
-</head>
-<body bgcolor="lightblue">
-  <div style="display: flex; flex-direction: row;" hidden>
-    <div class="sideDiv" style="background-color: lightgreen;">
-      <br> <a href="https://ayushbhatt.in"><button>Home Page</button></a>
-      <br> <br> <a href="https://ayushbhatt.in/Games"><button>Games</button></a>
-    </div> &nbsp;
-    <div class="mainDiv" style="background-color:bisque;">
-        <p> &nbsp; &nbsp; This is a collection of some of my best games. Click on the buttons to launch the respective games.</p>
-        &nbsp; &nbsp; <a href="https://ayushbhatt.in/AtariBreakoutReloaded/"><button>Atari Breakout : Reloaded</button></a> <br> <br>
-        &nbsp; &nbsp; <a href="https://ayushbhatt.in/NewtonsToy/"><button>Newton's Pendulum</button></a> <br> <br>
-        &nbsp; &nbsp; <a href="https://ayushbhatt.in/EndLess"><button>The Trex Game</button></a> <br> <br>
-        &nbsp; &nbsp; <a href="https://ayushbhatt.in/TheTypingGame/"><button>The Typing Game</button></a> <br> <br>
-        &nbsp; &nbsp; <a href="https://ayushbhatt.in/EmpireTheUprising/"><button>Empire : The Uprising (Abandoned)</button></a>
-    </div>
-  </div>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  chat-icon="https:&#x2F;&#x2F;www.google.com&#x2F;imgres?imgurl=https%3A%2F%2Fscx2.b-cdn.net%2Fgfx%2Fnews%2Fhires%2F2019%2F3-robot.jpg&ampimgrefurl=https%3A%2F%2Ftechxplore.com%2Fnews%2F2021-01-ces-robots.html&amptbnid=k5j75H3TlCaAiM&ampvet=12ahUKEwi80YrJkf3wAhX6k0sFHdrrBJYQMygKegUIARDsAQ..i&ampdocid=0DMYMUlwbbntyM&ampw=1920&amph=1771&ampq=robot&ampved=2ahUKEwi80YrJkf3wAhX6k0sFHdrrBJYQMygKegUIARDsAQ"
-  intent="WELCOME"
-  chat-title="WebAgent"
-  agent-id="ecf17201-eb5b-4308-afa7-508d27e12b07"
-  language-code="en"
-></df-messenger>
-</body>
+
+  </head>
+  <body style="background-color:white">
+      <!-- Top Navigation Bar -->
+      <div class="container" style="background-color:white">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-3 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          
+            <span class="fs-4">Ayush Bhatt</span>
+          </a>
+
+          <!-- Page Link Names and URLs -->
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Achievements</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">My Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact me</a></li>
+          </ul>
+        </header>
+      </div>
+
+      <!-- Breaker -->
+      <div style="background-color: lightgrey;" class="breaker"></div>
+
+      <!-- The Center of Attention -->
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">Who are you?</h1>
+        <div class="col-lg-6 mx-auto">
+        <p>My name is Ayush Bhatt, and I'm a high school student in DPS Hyderabad, India. This is my website. That's it.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        </div>
+        </div>
+
+        <h1 class="display-5 fw-bold">What are you?</h1>
+        <div class="col-lg-6 mx-auto">
+        <p>Human, student, techie, developer - take your pick. (Spoiler : I am all of them)</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        </div>
+        </div>
+
+        <h1 class="display-5 fw-bold">What are your interests?</h1>
+        <div class="col-lg-6 mx-auto">
+        <p>If not at school or studying (🙄), I am usually on my laptop(s), surfing on the wifi waves in the Internet Ocean. If the internet fails to interest me, then I spend my time coding. A good debate usually puts me at peace, and I love to overanalyse EVERYTHING around me. <br> <br> I am also obsessed with Digital Easter Eggs. If you don't already know what they are, WHAT ARE YOU DOING READING THIS GO FIND OUT.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        </div>
+        </div>
+
+        <h1 class="display-5 fw-bold">What are you interested to collab on?</h1>
+        <div class="col-lg-6 mx-auto">
+        <p>I am currently working on my website, and my games. I would love to collab on a retro-game remake. And if by any chance you need to make anything that is online, I'm your guy.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        </div>
+        </div>
+      </div>
+
+      <!-- End of page -->
+      <div style="background-color: lightslategray">
+        <br>
+        <p style="text-align:center;color:black;font-size:13px;">This site uses Bootstrap.</p>
+        <br><br><br><br><br><br>
+      </div>
+    </main>
+    
+    <!-- Link to Bootstrap JS File -->
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
 </html>
